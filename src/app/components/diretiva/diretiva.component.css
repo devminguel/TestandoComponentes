@@ -1,0 +1,79 @@
+/* Estilos gerais */
+p, h2, div {
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+/* Estilos existentes que você forneceu */
+.text-success {
+  color: rgb(81, 199, 81);
+}
+
+.text-danger {
+  background-color: red;
+  color: white;
+}
+
+.special {
+  border: 1px solid rgb(7, 7, 7);
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f9fa;
+}
+
+.text {
+  background-color: black;
+  border: 2px solid blue;
+  color: yellow;
+  padding: 20px;
+  margin: 20px;
+}
+
+.errorClass {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px dashed red;
+}
+
+/* Estilos adicionais para os outros elementos */
+/* Estilo para o parágrafo com ngStyle */
+p[ngStyle] {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilo para os inputs com ngModel */
+input {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para as labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilo para o container do ngModel */
+h2:has(+ label) {
+  margin-top: 30px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Estilo para o parágrafo que mostra o valor do campo */
